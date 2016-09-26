@@ -221,23 +221,27 @@
 				</section>
 				<section id="sec7">
 					<h2>High-level Design</h2>
-					At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can 
-					find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="thumbnail">
+								<img src="imgs/high-level.svg" alt="System High-Level Design">
+								<div class="caption">
+									<h6 class="text-center"><b><i>Figure 1. High-Level System Design</i></b></h5>
+								</div>
+							</div>
+						</div>
+					</div>
 					
-				
-			   
-					<hr class="col-md-12">
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	
+					<p>Figure 1 depicts the overall high-level design of our proposed solution. Taking advantage of the already existing smartphone capabilities: GPS, camera and network connectivity, our system will be able to to fulfil user needs of orientation while crossing a streets intersection.</p> 
+
+					<h4><b>Intersection Description Service</b></h3>
+					<p>The Smartphone Application, while activated by users, will start streaming GPS coordinates and Orientation information to the Server-Side Component. When Location Services component detects user proximity to an intersection it will notify the Smartphone Application the distance to the intersection and a characterization of the intersection will be calculated and provided to the users using the Orientation information provided by the application (bearing, heading). There exists open source Maps APIs (eg: OpenStreetMap API) and also libraries capable of calculating navigation routes for cars, hence the required contextual information of traffic flow, traffic lights, etc can be calculated using these tools.</p>
+
+					<h4><b>Traffic Light Detection</b></h4>
+					<p>When requested by users -using a phone shake or an a screen slide gesture, the Smartphone Application will start capturing streamed images from the current user environment at the intersection. This stream will be transmitted to the Server-Side Component where the Computer Vision subsystem will trigger a traffic light status detection algorithm which will assist the user to determine appropriate instant to cross the intersection. There exist sufficient documentation on how to calculate the traffic light status using Computer Vision algorithms, there are also open source libraries available which provide already implemented capabilities for that purpose.</p>  
+
+					<h4><b>Veering Detector</b></h4>
+					<p>For those users where the Smartphone Application reports to have the Veering add-on integrated, the server will also calculate if the user is veering to either side of the walk-path using the Veering Detector component of the Computer Vision subsystem. When the user is detected to veer to either side, this component will notify the Smartphone Application which will appropriately generate the signal for correcting current user behavior reacting in the left or right arm devices.</p>  
 				</section>
               	<section id="sec8">
 					<h2>Feasability Study</h2>
