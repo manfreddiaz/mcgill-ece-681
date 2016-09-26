@@ -31,7 +31,7 @@
           <a href="#">Project Proposal</a>
         </li>
         <li>
-          <a href="low-fidelity.html">Low-Fidelity Prototype & Test Plan</a>
+          <a href="#">Low-Fidelity Prototype & Test Plan</a>
         </li>
         <li>
           <a href="#">High-Fidelity Prototype & Evaluation Plan</a>
@@ -121,7 +121,7 @@
 							<li class="list-group-item">Uses a cane as her assistive technology to help her navigate around obstacles and remain on the sidewalk. Additionally, she uses an iPhone app called BlindSquare, which helps her identify which intersection she is at.</li>
 							<li class="list-group-item">Relies on BlindSquare and the acoustics of her surroundings to identify the location of the intersection.</li>
 							<li class="list-group-item">As she’s in a familiar setting, she knows which intersections have the APS technology and uses it when possible.</li>
-							<li class="list-group-item">When at an intersection where APS isn’t available, she uses the sound of traffic to help her time when she should go. As soon as she hears the first car start moving, she goes. If she happened to miss the first car’s departure, she would stay at the light for one more round.</li
+							<li class="list-group-item">When at an intersection where APS isn’t available, she uses the sound of traffic to help her time when she should go. As soon as she hears the first car start moving, she goes. If she happened to miss the first car’s departure, she would stay at the light for one more round.</li>
 						</ul>
 					</div>
               	
@@ -223,23 +223,87 @@
 				</section>
 				<section id="sec4">
 					<h2>Use Case Scenarios</h2>
-					At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can 
-					find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
-					
-				
-			   
-					<hr class="col-md-12">
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	
+					<hr/>
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<h3 class="panel-title">Use Case Scenario # 1 Road Intersection Information</h3>
+						</div>
+						<div class="panel-body">
+							<h4>Scenario</h4>
+							<p>
+								<ol>
+									<li>With the Smartphone Application active on screen, swipe on the screen to activate the Navigation mode.</li>
+									<li>
+										When you are getting closer to a road intersection, the application will provide you with the following information:
+										<ul>
+											<li>Roads that intersect.</li>
+											<li>A characterization of the road in front of you, which includes.
+												<ul>
+													<li>The number of lanes the road has.</li>
+													<li>Starting from the lane closer to you to the farest lane you will hear: the type of lane (bike lane or car lane), and the direction of the lanes specified by the position of your smartphone (eg. the first lane flows from your left side to your right side)</li>
+												</ul>
+											</li>
+											<li>A characterization of the road on your left hand (or right hand) depending on your orientation, which includes.
+												<ul>
+													<li>The number of lanes the road has.</li>
+													<li>Starting from the lane closer to you to the farest lane you will hear: the type of lane (bike lane or car lane), and the direction of the lanes specified by the position of your smartphone (eg. the first lane flows from your left side to your right side)</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li>If you did not properly hear the instructions, swipe on the screen again, the application will repeat the information for you.</li>
+									<li>If you want to exit the Navigation mode, shake your phone until you hear “Navigation Mode ended”.</li>
+								</ol>
+							</p>
+						</div>
+					</div>
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<h3 class="panel-title">Use Case Scenario # 2 Traffic Light Detection</h3>
+						</div>
+						<div class="panel-body">
+							<h4>Scenario</h4>
+							<p>
+								<ol>
+									<li>With the Smartphone Application active on screen, swipe on the screen to activate the Navigation mode.</li>
+									<li>When you are getting closer to a road intersection, the application will provide you with the information about the road intersection.</li>
+									<li>After the information is provided, the Traffic Light Detection will be activated.
+										<ol>
+											<li>Bear your body in the direction you want to cross the intersection.</li>
+											<li>The Traffic Light Detection will inform you which light is currently on.</li>
+											<li>When the Traffic Light changes to Green (or walking signal) you will hear “You can start crossing”.</li>
+											<li>If the information is available, you will also hear how many seconds you have until the light status changes.</li>
+										</ol>
+									</li>
+									<li>If you want to exit the Navigation mode, shake your phone until you hear the system telling “Navigation Mode ended”.</li>
+								</ol>
+							</p>
+						</div>
+					</div>
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<h3 class="panel-title">Use Case Scenario # 3 Veering Detection</h3>
+						</div>
+						<div class="panel-body">
+							<h4>Scenario</h4>
+							<p>
+								<ol>
+									<li>With the Smartphone Application active on screen, swipe on the screen to activate the Navigation mode.</li>
+									<li>When you are getting closer to a road intersection, the application will provide you with the information about the road intersection.</li>
+									<li>After the information is provided, the Traffic Light Detection will be activated and will tell you when to proceed crossing.</li>
+									<li>
+										If you have the Veering add-on with you, swipe on the screen to activate the Veering mode.
+										<ol>
+											<li>As soon as the Veering mode is activated, you will feel the add-on devices active in both your arms.</li>
+											<li>If the system detects you are veering to your right, you will only start feeling the right arm device, please correct your walk until you feel both devices activated again.</li>
+											<li>If the system detects you are veering to your left, you will only start feeling the left arm device, please correct your walk until you feel both devices activated again.</li>
+										</ol>
+									</li>
+									<li>If you want to exit the Navigation mode, shake your phone until you hear “Navigation Mode ended”.</li>
+								</ol>
+							</p>
+						</div>
+					</div>
 				</section>
 				<section id="sec5">
 					<h2>Related Products</h2>
