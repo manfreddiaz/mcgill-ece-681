@@ -14,7 +14,7 @@
 	</head>
 	<body>
 
-<header class="navbar navbar-default navbar-static-top" role="banner">
+<header class="navbar navbar-inverse navbar-static-top" role="banner">
   <div class="container">
     <div class="navbar-header">
       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
@@ -27,11 +27,11 @@
     </div>
     <nav class="collapse navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
-        <li class="active">
-          <a href="#">Project Proposal</a>
-        </li>
         <li>
-          <a href="#">Low-Fidelity Prototype & Test Plan</a>
+          <a href="index.html">Project Proposal</a>
+        </li>
+        <li class="active">
+          <a href="low-fidelity.html">Low-Fidelity Prototype & Test Plan</a>
         </li>
         <li>
           <a href="#">High-Fidelity Prototype & Evaluation Plan</a>
@@ -55,182 +55,501 @@
 	<div class="row">
   			<div class="col-md-3" id="leftCol">
               	
-				<div class="well"> 
-              	<ul class="nav nav-stacked" id="sidebar">
-                  <li><a href="#sec1">Observations</a></li>
-                  <li><a href="#sec2">Problem Statement</a></li>
-                  <li><a href="#sec3">Personas</a></li>
-                  <li><a href="#sec4">Use Case Scenarios</a></li>
-				  <li><a href="#sec5">Related Products</a></li>
-				  <li><a href="#sec6">Products Comparative</a></li>
-				  <li><a href="#sec7">High-level Design</a></li>
-				  <li><a href="#sec8">Feasability Study</a></li>
+				<div class=""> 
+              	<ul class="nav nav-pills nav-stacked " id="sidebar">
+                  <li class="active"><a href="#sec1">Design Concepts</a></li>
+                  <li><a href="#sec2">Prototypes</a></li>
+                  <li><a href="#sec3">Usability Goals and Benchmark</a></li>
+                  <li><a href="#sec4">Test Materials</a></li>
+				  <li><a href="#sec5">Summary of Test Results</a></li>
               	</ul>
   				</div>
 
       		</div>  
       		<div class="col-md-9">
               	<section id="sec1">
-					<h2>Observations</h2>
-					At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can 
-					find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
-					
-				
-			   
-					<hr class="col-md-12">
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	
+					<div class="page-header">
+						<h2>Design Concepts<small></small></h1>
+					</div>
+
+					<p class="text-justify">The following four sections of sketches will propose different functionalities across the three tasks that Intersect-Assist will perform and shows possible versions of how the user will interact with the smartphone.</p>		
+					<div class="row">
+						<div class="col-sm-6 col-md-6">
+							<div class="thumbnail">
+							<img src="imgs/mapping.jpg" alt="Mapping">
+							<div class="caption">
+								<h3>Mapping</h3>
+								<p class="text-justify">In the above sketches, three different modes are proposed for the delivery of the mapping information.</p>
+								<br/>
+							</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-6">
+							<div class="thumbnail">
+							<img src="imgs/light-detection.jpg" alt="Light Detection">
+							<div class="caption">
+								<h3>Light Detection</h3>
+								<p class="text-justify">In the above sketches, three different modes are proposed for how the system will detect the light status and deliver the information to the user.</p>
+							</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-6">
+							<div class="thumbnail">
+							<img src="imgs/veering.jpg" alt="Veering">
+							<div class="caption">
+								<h3>Veering</h3>
+								<p class="text-justify">In the above sketches, five different methods are proposed for how the system interacts with the user while they cross an intersection.</p>
+								<br/>
+								<br/>
+							</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-6">
+							<div class="thumbnail">
+							<img src="imgs/app-interaction.jpg" alt="Application Interaction">
+							<div class="caption">
+								<h3>Application Interaction</h3>
+								<p class="text-justify">The above section shows two sketches of possible overall interaction between the user and the application. It is important to note that the team decided on the first option only since we felt that the second option wouldn’t work as well due to accidental shaking.</p>
+							</div>
+							</div>
+						</div>
+						<div class="col-xs-12">
+							<p class="text-justify">
+							Based on the three first sets of sketches proposed above, we drew 10 sketches below proposing different overall interaction between the user and the system. We did not include possible App Interaction in the sketches because only one option was chosen. As our system is for the visually impaired community, the sketches themselves may look similar. As a result, we added text next to each sketch to provide the reader with more context.
+							</p>
+							<div class="thumbnail">
+								<img src="imgs/ten-sketches.jpg" alt="Ten sketches">
+								<div class="caption">
+									<h3 class="text-center">Ten Sketches</h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12">
+							<p class="text-justify">After producing the 10 sketches, the team boiled it down to the following two preferable options:</p>
+						</div>
+						<div class="col-md-6 col-sm-6">
+							<div class="thumbnail">
+								<img src="imgs/more-detailed-choice-1.jpg" alt="Application Interaction">
+								<div class="caption">
+									<h3>Detailed Choice 1</h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6">
+							<div class="thumbnail">
+								<img src="imgs/more-detailed-choice-2.jpg" alt="Application Interaction">
+								<div class="caption">
+									<h3>Detailed Choice 2</h3>
+								</div>
+							</div>
+						</div>
+						
+					</div>
 				</section>
 				<section id="sec2">
-					<h2>Problem Statement</h2>
-					At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can 
-					find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
-					
-				
-			   
-					<hr class="col-md-12">
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	
+					<div class="page-header">
+						<h2>Prototypes<small></small></h1>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<h4>Starting the Application and Allowances</h4>
+							<p class="text-justify">The application would start with a welcoming message and the affordances the user has with the smartphone directly. This includes showing how to skip a message, how to obtain information about an intersection and how to start the light detection and veering task. As explained above, these allowances will remain the same across both prototypes. </p>							
+						</div>
+						<div class="col-xs-12">
+							<h4><b>Prototype 1</b></h4>
+							<p class="text-justify">The first low-fidelity prototype the team came up with explores the utilization of spatialized audio to render information about the intersection, voice to indicate the status of the light and audio feedback from each ear depending on which way the user is veering.</p>
+							<h5>Intersection Mapping</h5>
+							<p class="text-justify">The mapping was accomplished by having the reader of the intersection information move to the front of the person to render information relevant to both sides of the user’s body. Afterwards, if the parallel street was to the right of the user, the reader would jump to the user’s right and read the information (vice versa if it was on the left). Finally, the reader would jump in front of the user to read the information regarding the perpendicular street.</p>
+							<h5>Light detection and Veering</h5>
+							<p class="text-justify">Once the information above was read, the reader would stand in front of the user and inform them when the light turns green. Once they start walking, one team member stands on each side of the user. If veering is encountered, for example to the right, the person on the right would simulate a beeping sound to inform the user that they are veering to the right. This would continue until the user gets to the other side of the intersection.</p>
+							<div class="thumbnail">
+								<img src="imgs/low-fi-prototype-1.jpg" alt="Application Interaction">
+								<div class="caption">
+									<h3 class="text-center">Low-Fidelity Prototype 1</h3>
+								</div>
+							</div>
+							<p class="text-justify">The above image shows the hardware that was used to simulate the feeling of wearing the technology that would be required by the system. The hairband simulates the user wearing bone conduction headphones. We simulate the phone being worn around the neck with the net and rope shown. The phone in the image is turned off. It’s used to see if the user would understand which way they should swipe to obtain the information they require.</p>
+						</div>
+						<div class="col-xs-12">
+							<h4><b>Prototype 2</b></h4>
+							<p class="text-justify">The second low-fidelity prototype the team came up with explores the utilization of regular audio voice from the smartphone to render information about the intersection, regular audio voice to indicate the status of the light and haptic feedback from each wrist depending on which way the user is veering.</p>
+							<h5>Intersection Mapping</h5>
+							<p class="text-justify">The mapping of the intersection was accomplished by having the reader of the intersection information move to the front of the person to render all the information.</p>
+							<h5>Light detection and Veering</h5>
+							<p class="text-justify">Once the information above was read, two members of the Intersect-Assist team would be required to stand on each side of the user. When the light turns green, both of the members would simultaneously shake the user’s wrists. This would indicate the light has turned green and the person may commence crossing the intersection. Once they would start walking, if veering is encountered, for example to the right, the person on the right would shake the user’s right arm to indicate they are veering to the right and should correct their path. This would continue until the user gets to the other side of the intersection.</p>
+							<div class="thumbnail">
+								<img src="imgs/low-fi-prototype-2.jpg" alt="Application Interaction">
+								<div class="caption">
+									<h3 class="text-center">Low-Fidelity Prototype 2</h3>
+								</div>
+							</div>
+							<p class="text-justify">The above image shows the hardware that was used to simulate the feeling of wearing the technology that would be required by the system. The hair elastics simulates the user wearing haptic wrist bands for veering. Again, we simulate the phone being worn around the neck with the net and rope shown. The phone in the image is turned off. It’s used to see if the user would understand which way they should swipe to obtain the information they require.</p>
+						</div>
+					</div>
 				</section>
 				<section id="sec3">
-					<h2>Personas</h2>
-					At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can 
-					find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
-					
-				
-			   
-					<hr class="col-md-12">
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	
+					<div class="page-header">
+						<h2>Personas<small></small></h1>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-6 col-md-4">
+							<div class="thumbnail">
+								<img src="imgs/woman.png" alt="...">
+								<div class="caption">
+									<h3>Subject 1</h3>
+									<p class="text-justify">A low vision individual who uses a cane or a guide-dog to help navigate around obstacles. She has the ability to see bright lights and blob-like objects. She can also rely on auditory processing skills to help her navigate. Her day job is to teach other visually impaired people how to adapt to their impairment. This sometimes entails going to completely new neighbourhoods.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-8">
+							<h4><b>Goals</b></h4>
+							<ul>
+								<li>Not having to rely on others crossing the intersection or for the intersection to be filled with traffic in order to feel comfortable crossing it.</li>
+								<li>To have the ability to go to her students neighbourhoods without needing to spend the day before listening to descriptions of it.</li>
+								<li>To have the ability to map any intersection with a high level of confidence.</li>
+							</ul>
+							<h4><b>Accesibility Considerations</b></h4>
+							<ul>
+								<li>Relies on her cane to avoid all obstacles on the floor.</li>
+								<li>Uses her acoustic surrounding much less than the totally blind person when walking towards the intersection, as she also relies on her blob-like vision to identify it. </li>
+								<li>Must rely on the intersection being busy with people as she crosses it while using the <i>“following a crowd” method.</i></li>
+								<li>Has the ability to navigate very fast, faster than all other observed users.</li>
+								<li>Uses smartphone applications e.g: BlindSquare which help her identify the location of intersections.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 col-md-4">
+							<div class="thumbnail">
+								<img src="imgs/man.png" alt="...">
+								<div class="caption">
+									<h3>Subject 2</h3>
+									<p class="text-justify">A blind individual who uses a guide dog or a cane to help him navigate around obstacles and walk relatively straight. Generally uses his auditory processing skills to help him navigate through a city. Also tends to rely on others around him to help him either orient himself or in times when he needs to ask for help.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-8">
+							<h4><b>Goals</b></h4>
+							<ul>
+								<li>To feel safe when navigating through open areas and intersections.</li>
+								<li>To be autonomous in his everyday life and have the ability to explore new areas while feeling comfortable.</li>
+								<li>To have an easier way of mapping the intersection.</li>
+								<li>To cross an intersection with minimal veering.</li>
+							</ul>
+							<h4><b>Accessibility Considerations</b></h4>
+							<ul>
+								<li>Must rely on the acoustics of his surroundings to identify his proximity to the intersection.</li>
+								<li>Must have the ability to identify the chance in pavement to ensure he doesn’t go over the sidewalk.</li>
+								<li>Must ensure he has built an accurate map of the intersection to attempt crossing it. This usually requires 3 rounds of traffic lights.</li>
+								<li>The intersection must be busy enough in order for him:
+									<ol>
+										<li>To use the acoustics of the traffic for map building.</li>
+										<li>To ask for help if he is unsuccessful in building an accurate map.</li>
+									</ol>
+								</li>
+								<li>The intersection must also include APS technology to help him orient himself properly and walk straight with minimal veering.</li>
+								<li>Relies on traffic going parallel to him which makes cars/trucks turning right a frightening experience.</li>
+							</ul>
+						</div>
+					</div>
 				</section>
 				<section id="sec4">
 					<h2>Use Case Scenarios</h2>
-					At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can 
-					find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
-					
-				
-			   
-					<hr class="col-md-12">
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	
+					<hr/>
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<h3 class="panel-title">Use Case Scenario # 1 Road Intersection Information</h3>
+						</div>
+						<div class="panel-body">
+							<h4>Scenario</h4>
+							<p>
+								<ol>
+									<li>With the Smartphone Application active on screen, swipe on the screen to activate the Navigation mode.</li>
+									<li>
+										When you are getting closer to a road intersection, the application will provide you with the following information:
+										<ul>
+											<li>Roads that intersect.</li>
+											<li>A characterization of the road in front of you, which includes.
+												<ul>
+													<li>The number of lanes the road has.</li>
+													<li>Starting from the lane closer to you to the farest lane you will hear: the type of lane (bike lane or car lane), and the direction of the lanes specified by the position of your smartphone (eg. the first lane flows from your left side to your right side)</li>
+												</ul>
+											</li>
+											<li>A characterization of the road on your left hand (or right hand) depending on your orientation, which includes.
+												<ul>
+													<li>The number of lanes the road has.</li>
+													<li>Starting from the lane closer to you to the farest lane you will hear: the type of lane (bike lane or car lane), and the direction of the lanes specified by the position of your smartphone (eg. the first lane flows from your left side to your right side)</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li>If you did not properly hear the instructions, swipe on the screen again, the application will repeat the information for you.</li>
+									<li>If you want to exit the Navigation mode, shake your phone until you hear “Navigation Mode ended”.</li>
+								</ol>
+							</p>
+						</div>
+					</div>
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<h3 class="panel-title">Use Case Scenario # 2 Traffic Light Detection</h3>
+						</div>
+						<div class="panel-body">
+							<h4>Scenario</h4>
+							<p>
+								<ol>
+									<li>With the Smartphone Application active on screen, swipe on the screen to activate the Navigation mode.</li>
+									<li>When you are getting closer to a road intersection, the application will provide you with the information about the road intersection.</li>
+									<li>After the information is provided, the Traffic Light Detection will be activated.
+										<ol>
+											<li>Bear your body in the direction you want to cross the intersection.</li>
+											<li>The Traffic Light Detection will inform you which light is currently on.</li>
+											<li>When the Traffic Light changes to Green (or walking signal) you will hear “You can start crossing”.</li>
+											<li>If the information is available, you will also hear how many seconds you have until the light status changes.</li>
+										</ol>
+									</li>
+									<li>If you want to exit the Navigation mode, shake your phone until you hear the system telling “Navigation Mode ended”.</li>
+								</ol>
+							</p>
+						</div>
+					</div>
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<h3 class="panel-title">Use Case Scenario # 3 Veering Detection</h3>
+						</div>
+						<div class="panel-body">
+							<h4>Scenario</h4>
+							<p>
+								<ol>
+									<li>With the Smartphone Application active on screen, swipe on the screen to activate the Navigation mode.</li>
+									<li>When you are getting closer to a road intersection, the application will provide you with the information about the road intersection.</li>
+									<li>After the information is provided, the Traffic Light Detection will be activated and will tell you when to proceed crossing.</li>
+									<li>
+										If you have the Veering add-on with you, swipe on the screen to activate the Veering mode.
+										<ol>
+											<li>As soon as the Veering mode is activated, you will feel the add-on devices active in both your arms.</li>
+											<li>If the system detects you are veering to your right, you will only start feeling the right arm device, please correct your walk until you feel both devices activated again.</li>
+											<li>If the system detects you are veering to your left, you will only start feeling the left arm device, please correct your walk until you feel both devices activated again.</li>
+										</ol>
+									</li>
+									<li>If you want to exit the Navigation mode, shake your phone until you hear “Navigation Mode ended”.</li>
+								</ol>
+							</p>
+						</div>
+					</div>
 				</section>
 				<section id="sec5">
 					<h2>Related Products</h2>
-					At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can 
-					find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
-					
-				
-			   
-					<hr class="col-md-12">
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	
+					<div class="media">
+						<div class="media-left">
+							<a href="#">
+							<img class="media-object" width="300" height="264" src="imgs/blindsquare.png" alt="Blindsquare Application">
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">Blindsquare</h4>
+							<p>BlindSquare is an app that uses GPS to voice to visually impaired users the closest intersections.
+							It is a very useful app for navigation and if the user needs to find the closest or most popular
+							caffe, it can find it. It can also give information to the user about their current location and the
+							location of POIs.
+							</p><p>However, it doesn’t provide contextual information about the intersection the user is at. Neither
+							does it give the corner at which the user is at. All this information could prove very important for
+							accomplishing the crossing an intersection task. It also doesn’t provide the user with information
+							about the status of the light nor does it give corrective action to the user regarding veering.</p>
+						</div>
+					</div>
+					<div class="media">
+						<div class="media-left">
+							<a href="#">
+							<img class="media-object" width="300" height="264" src="imgs/aps.jpg" alt="Accessible Pedestrian Signals">
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">Accessible Pedestrian Signals</h4>
+							<p>Accessible Pedestrian Signals (APS) provides audible signals to users to help with:
+								<ul>
+									<li>Begin walking from the sidewalk.</li>
+									<li>The direction of the opposite side of the sidewalk, which tackles the problem with veering.</li>
+									<li>Intersection geometry through tactile diagrams (not always present).</li>
+									<li>Intersection street names provided in Braille.</li>
+								</ul>
+							</p>
+							<p>This technology provides everything necessary for a VI user navigate an intersection. However,
+							it is an expensive technology to implement ($1000 to $10000 per crosswalk), which explains its rarity.</p>
+						</div>
+					</div>
+					<div class="media">
+						<div class="media-left">
+							<a href="#">
+							<img class="media-object" width="300" height="264" src="imgs/orcam.jpg" alt="Orcam Application">
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">Orcam</h4>
+							<p>Orcam is a company that provides the VI community with a camera that can clip on to glasses.
+								which connects to a processing unit that is put into the users pocket or backpack. This device
+								uses algorithms from computer vision to “see”. One of its many functionalities is aiding in
+								crossing an intersection. This is done by the camera seeing the state of the light and giving
+								feedback to the user through bone conduction headphones, provided on the camera.</p>
+							<p> 
+								Although this is a major breakthrough for the VI community, it comes at a cost of $2500. This
+								price tag is enough to drive many of the potential users away. It also doesn’t provide the user
+								with any information regarding veering. 
+							</p>
+						</div>
+					</div>
 				</section>
 				<section id="sec6">
 					<h2>Products Comparative</h2>
-					At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can 
-					find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
-					
-				
-			   
-					<hr class="col-md-12">
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	
+					<p>In contrast to the information provided by BlindSquare and Orcam, the proposed system would
+					assist the user in mapping the intersection, providing contextual information on the number of
+					lanes, the configuration in terms of two-way vs. one-way, the number of stop signs, the shape of
+					the intersection. Since BlindSquare wasn’t built to tackle veering nor was it designed to detect
+					the status of lights, we won’t compare it on these tasks.</p>
+					<p>	Since APS tackles all the problems that our system tackles in terms of technology, we won’t
+					discuss the technological differences. We will, however, provide the main limitation of APS and
+					how the proposed product will tackle these.</p>
+					<p>Firstly, the biggest limitation with APS is their costs. APS’s price makes it very difficult to get
+					approval for implementation. Contrarily, our product will come at a relatively low cost, since the
+					sources of costs will be the haptic feedback bracelets, the camera and the bone conduction
+					headphones, if necessary. The second biggest limitation of APS (which is a result of the first) is its rarity. This makes it
+					very difficult for the VI community to rely on it. However, since the proposed idea is one-time
+					purchase of apps/devices, the VI community will have a product that it can permanently rely on,
+					independent of the intersection the user is at.</p>
+					<p>Orcam’s price makes it difficult to obtain acceptance by the VI community. For the same reason
+					mentioned above, the proposed system is superior in this regards. Additionally, Orcam doesn't
+					tackle the problem with veering whereas this application would use relatively cheap haptic
+					motors to provide guidance to the users.</p>              	
 				</section>
 				<section id="sec7">
 					<h2>High-level Design</h2>
-					At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can 
-					find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="thumbnail">
+								<img src="imgs/high-level.svg" alt="System High-Level Design">
+								<div class="caption">
+									<h6 class="text-center"><b><i>Figure 1. High-Level System Design</i></b></h5>
+								</div>
+							</div>
+						</div>
+					</div>
 					
-				
-			   
-					<hr class="col-md-12">
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	
+					<p class="text-justify">Figure 1 depicts the overall high-level design of our proposed solution. Taking advantage of the already existing smartphone capabilities: GPS, camera and network connectivity, our system will be able to to fulfil user needs of orientation while crossing a streets intersection.</p> 
+
+					<h4><b>Intersection Description Service</b></h3>
+					<p class="text-justify">The Smartphone Application, while activated by users, will start streaming GPS coordinates and Orientation information to the Server-Side Component. When Location Services component detects user proximity to an intersection it will notify the Smartphone Application the distance to the intersection and a characterization of the intersection will be calculated and provided to the users using the Orientation information provided by the application (bearing, heading). There exists open source Maps APIs (eg: OpenStreetMap API) and also libraries capable of calculating navigation routes for cars, hence the required contextual information of traffic flow, traffic lights, etc can be calculated using these tools.</p>
+
+					<h4><b>Traffic Light Detection</b></h4>
+					<p class="text-justify">When requested by users -using a phone shake or an a screen slide gesture, the Smartphone Application will start capturing streamed images from the current user environment at the intersection. This stream will be transmitted to the Server-Side Component where the Computer Vision subsystem will trigger a traffic light status detection algorithm which will assist the user to determine appropriate instant to cross the intersection. There exist sufficient documentation on how to calculate the traffic light status using Computer Vision algorithms, there are also open source libraries available which provide already implemented capabilities for that purpose.</p>  
+
+					<h4><b>Veering Detector</b></h4>
+					<p class="text-justify">For those users where the Smartphone Application reports to have the Veering add-on integrated, the server will also calculate if the user is veering to either side of the walk-path using the Veering Detector component of the Computer Vision subsystem. When the user is detected to veer to either side, this component will notify the Smartphone Application which will appropriately generate the signal for correcting current user behavior reacting in the left or right arm devices.</p>  
 				</section>
               	<section id="sec8">
 					<h2>Feasability Study</h2>
-					At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can 
-					find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
-					
-				
-			   
-					<hr class="col-md-12">
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	
+					<h3>Workforce</h4>
+					<p class="text-justify">Our Team is constituted by three team members with different and complementary backgrounds. In order to bring this project to a Beta Prototype phase we will need computer vision, hardware integration, mobile development and service development, maps API integration, and also the ability to work with different type of hardware. As explained in the table below, each of our members has past experiences dealing with this type of technologies and the required skills, reasons that make us assert we are fully capable of bringing this project up to its final phase.</p>
+					<p class="text-justify">We believe we can allocate around 50 hours/week of effort to this project, considering our current responsibilities. Having that last deliverable due on November 30th, we have 9 weeks to complete our Beta prototype, to which we will approximately dedicate 450 hours of collective effort. In case of need, each member believe has the ability to extend the time availability.</p>
+					<table class="table table-condensed table-bordered">
+						    <colgroup>
+								<col span="1" style="width: 20%;">
+								<col span="1" style="width: 15%;">
+								<col span="1" style="width: 65%;">
+							</colgroup> 
+						<thead>
+							<tr class="success">
+								<th style="width: auto">Team Member</th>
+								<th class="text-center">Hours/week</th>
+								<th>Background</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Roger Girgis</td>
+								<td class="text-center">15</td>
+								<td>
+									<p><b>Software</b>: python, PyQt, C++, Matlab, Simulink to design an LQR, SolidWorks.</p>
+									<p><b>Hardware</b>: arduino, raspberry pi, touchscreens (capacitive and resistive), sensors (accelerometer, gyroscope, muscle sensors), servos, stepper motors, brushless DC motors.</p>
+								</td>
+							</tr>
+							<tr>
+								<td>Manfred Diaz</td>
+								<td class="text-center">20</td>
+								<td>
+									<p><b>Software</b>: C++, C#, Java and some python, Web development, Android development.</p>
+									<p><b>Hardware</b>: Arduino, Raspberry PI, some sensors, communication modules, depth sensors.</p>
+								</td>
+							</tr>
+							<tr>
+								<td>Aleksi Sapon</td>
+								<td class="text-center">15</td>
+								<td>
+									<p><b>Software</b>: computer graphics, compilers, games, Java, C, D, python.</p>
+									<p><b>Hardware</b>: VHDL, FPGAs. basic circuitry. And lasers, for some reason.</p>
+								</td>
+							</tr>
+						</tbody>	
+					</table>
+					<h3>Workload</h3>
+					<p class="text-justify">The biggest effort of our system will be focused on providing the user a great experience. Once guaranteed that, we have identified three major software components in our system: the Traffic Light Detector, the Veering Detector, and the Road Intersection Description Services. For the Traffic Light Detector there exist sufficient documentation and libraries available, so this will not pose a major challenge for our team. </p>
+					<p class="text-justify">In the order hand, the Veering Detector and the Road Intersection Description Services are the one software components that will require our biggest efforts in terms of implementation, which we have estimated will be around 300 collective/hours.</p>
+					<p class="text-justify">Our remaining efforts will be dedicated to the project deliverables, and to the Veering add-on and the Smartphone application which we will try to maintain as simple as possible for this Beta prototyping phase.</p>
 				</section>
-              	
+				<section id="sec9">
+					<h2>Summary of Individual Contributions</h2>
+					<h3>Contributions</h3>
+					<h4>Roger Girgis</h4>
+					<ul>
+						<li>Observations</li>
+						<li>Problem Statement</li>
+						<li>Personas</li>
+						<li>Related Products</li>
+						<li>Products Comparative</li>
+					</ul>
+					<h4>Manfred Diaz</h4>
+					<ul>
+						<li>Observations</li>
+						<li>Webmaster</li>
+						<li>Use Case Scenarios</li>
+						<li>High-Level Design</li>
+						<li>Feasibility Study</li>
+					</ul>
+					<h3>Contribution hours</h3>
+					<table class="table table-condensed table-bordered">
+
+						<thead>
+							<tr class="success">
+								<th></th>
+								<th class="text-center">Roger Girgis</th>
+								<th class="text-center">Manfred Diaz</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>meetings</td>
+								<td class="text-center">8</td>
+								<td class="text-center">8</td>
+							</tr>
+							<tr>
+								<td>website</td>
+								<td class="text-center">6</td>
+								<td class="text-center">8</td>
+							</tr>
+							<tr>
+								<td>writing</td>
+								<td class="text-center">8</td>
+								<td class="text-center">6</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td>total</td>
+								<td class="text-center">24</td>
+								<td class="text-center">24</td>
+							</tr>
+						</tfoot>	
+					</table>
+				</section>              	
       		</div> 
   	</div>
 </div>
@@ -238,7 +557,7 @@
 
 
 	<!-- script references -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="js/jquery-3.1.1.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/scripts.js"></script>
 	</body>
