@@ -14,7 +14,7 @@
 	</head>
 	<body>
 
-<header class="navbar navbar-default navbar-static-top" role="banner">
+<header class="navbar navbar-inverse navbar-static-top" role="banner">
   <div class="container">
     <div class="navbar-header">
       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
@@ -27,13 +27,13 @@
     </div>
     <nav class="collapse navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
+        <li>
+          <a href="index.html">Project Proposal</a>
+        </li>
+        <li>
+          <a href="low-fidelity.html">Low-Fidelity Prototype & Test Plan</a>
+        </li>
         <li class="active">
-          <a href="#">Project Proposal</a>
-        </li>
-        <li>
-          <a href="#">Low-Fidelity Prototype & Test Plan</a>
-        </li>
-        <li>
           <a href="#">High-Fidelity Prototype & Evaluation Plan</a>
         </li>
         <li>
@@ -55,191 +55,207 @@
 	<div class="row">
   			<div class="col-md-3" id="leftCol">
               	
-				<div class="well"> 
-              	<ul class="nav nav-stacked" id="sidebar">
-                  <li><a href="#sec1">Observations</a></li>
-                  <li><a href="#sec2">Problem Statement</a></li>
-                  <li><a href="#sec3">Personas</a></li>
-                  <li><a href="#sec4">Use Case Scenarios</a></li>
-				  <li><a href="#sec5">Related Products</a></li>
-				  <li><a href="#sec6">Products Comparative</a></li>
-				  <li><a href="#sec7">High-level Design</a></li>
-				  <li><a href="#sec8">Feasability Study</a></li>
+				<div class=""> 
+              	<ul class="nav nav-pills nav-stacked " id="sidebar">
+                  <li class="active"><a href="#sec1">User Manual & Installation Guide</a></li>
+                  <li><a href="#sec2">Design Evolution</a></li>
+                  <li><a href="#sec3">Prototype Implementation</a></li>
+                  <li><a href="#sec4">User Population</a></li>
+				  <li><a href="#sec5">Usability Goals</a></li>
+				  <li><a href="#sec5">Usability Test Procedure</a></li>
+				  <li><a href="#sec5">Reporting</a></li>
+				  <li><a href="#sec5">Usability Evaluation</a></li>
               	</ul>
   				</div>
 
-      		</div>  
+      		</div>
       		<div class="col-md-9">
-              	<section id="sec1">
-					<h2>Observations</h2>
-					At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can 
-					find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
-					
-				
-			   
-					<hr class="col-md-12">
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	
-				</section>
-				<section id="sec2">
-					<h2>Problem Statement</h2>
-					At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can 
-					find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
-					
-				
-			   
-					<hr class="col-md-12">
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	
+				<section id="sec1">
+					<div class="page-header">
+						<h2>User and Installation Manual<small></small></h1>
+					</div>
+					<p class="text-justify">The following four sections of sketches will propose different functionalities across the three tasks that Intersect-Assist will perform and shows possible versions of how the user will interact with the smartphone.</p>
+					<div class="row">
+						<div class="col-xs-12">
+							<h5>Design Change #1: Terminology</h5>
+							<p class="text-justify">The terminology used to describe intersections wasn’t clear. For example, using the words “Traffic flows in the direction you are facing…” proved confusing to both participants. A more suitable explanation is “Traffic flows from back to front…” For this prototype, we implemented it with explanations that are more intuitive to the users. </p>
+						</div>
+					</div>				
+				</section> 
+              	<section id="sec2">
+					<div class="page-header">
+						<h2>Design Evolution<small></small></h1>
+					</div>
+					<p class="text-justify">The following four sections of sketches will propose different functionalities across the three tasks that Intersect-Assist will perform and shows possible versions of how the user will interact with the smartphone.</p>
+					<div class="row">
+						<div class="col-xs-12">
+							<h5>Design Change #1: Terminology</h5>
+							<p class="text-justify">The terminology used to describe intersections wasn’t clear. For example, using the words “Traffic flows in the direction you are facing…” proved confusing to both participants. A more suitable explanation is “Traffic flows from back to front…” For this prototype, we implemented it with explanations that are more intuitive to the users. </p>
+							<h5>Design Change #2: Gestures within the Application</h5>
+							<p class="text-justify">The gestures original described were “Swipe Upwards”, “Swipe Downwards” and “Tap once”. We intended for swiping upwards or downwards to be used in a spatial context, meaning no matter which way you put the phone, the user should swipe towards the sky for upwards and ground for downwards. However, we didn’t pay attention to how users wear the mobile device to use this and other applications, nor did we know what the users are used to doing when an application requires them to swipe upwards. Since they wear the smartphones upside down around their necks, they hold the phone horizontally and swipe in the direction relative to the phone. These adjustments are reflected in this version.</p>
+							<h5>Design Change #3: Portrayal of Information and Interaction</h5>
+							<p class="text-justify">Our design has gone through several iterations in the low fidelity phase. In our low-fidelity testing, we provided users with three different experiences:</p>
+							<ol>
+								<li>Mapping and veering provided with partially spatialized audio.</li>
+								<li>Mapping provided with regular audio and veering was provided with partially spatialized audio.</li> 
+								<li>Mapping provided with regular audio and veering provided with haptic feedback bracelets.</li>
+							</ol>						
+							<p class="text-justify">After performing the testing, the favoured prototype was #2 above. Although the users didn’t feel a substantial difference between haptics and stereo for veering, from the point of view of feasibility, we decided to go with audio beeping. Additionally, users felt that we can enrich the experience of beeping with the addition of some form of speech describing how much veering is occurring. We decided to implement it via a clock analogy, i.e. if the user is veering towards 10 o’clock, the system will tell them you are moving towards 10 o’clock. turn towards 12 o’clock. This would be overlaid with the beeping from ear to ear.</p>
+						</div>
+					</div>				
 				</section>
 				<section id="sec3">
-					<h2>Personas</h2>
-					At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can 
-					find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
-					
-				
-			   
-					<hr class="col-md-12">
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	
+					<div class="page-header">
+						<h2>Usability Goals<small></small></h1>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<p>The users you should evaluate the prototype with must be from the visually impaired community, preferably the INLB community. We described two types of users in our project proposal: the blind user and the low-vision user. For the mapping side of the application, both personas would greatly benefit from the proposed system. However, veering is encountered to a much greater degree by blind users than low vision users. For this purpose, we would prefer testing be done with more blind users than low vision users. But it is still very important that the latter persona still be tested with to ensure the application has a sense of generality for both user groups.</p>
+						</div>
+						<div class="col-xs-12">
+							<div class="well">
+								<h5><b>Goal # 1</b></h5> 
+								<p><i>The user shouldn’t need to play the introduction to the application more than two times, which includes the information on allowances.</i>
+								<p class="text-info"><b>PASS/FAIL:</b> If the user needed to repeat the introduction more than two times, the system fails to meet this goal. </i></p>
+							</div>
+							<div class="well">
+								<h5><b>Goal # 2</b></h5> 
+								<p><i>The described allowances below shouldn’t cause any confusion to the user.
+								<ul>
+									<li>Swipe up, meaning relative to the screen.</li>
+									<li>Swipe down, meaning relative to the screen.</li>
+									<li>Double tap, meaning to double tap the screen.</li>
+								</ul></i>
+								</p>
+								<p class="text-info"><b>PASS/FAIL:</b> If, for example, the user swiped upwards when she intended to swipe downwards(or any variant of this example), and it wasn’t due to any accidental swiping, the system fails to meet this goal.</i></p>
+							</div>
+							<div class="well">
+								<h5><b>Goal # 3</b></h5> 
+								<p><i>The rendering of information regarding mapping and/or veering should be coherent with what the user intends to accomplish.</i>
+								<p class="text-info"><b>PASS/FAIL:</b> If the user is confused and requires the help of someone else, the system fails to meet this goal.</i></p>
+							</div>
+							<div class="well">
+								<h5><b>Goal # 4</b></h5> 
+								<p><i>The user should be capable of skipping any information she doesn’t want to hear.</i>
+								<p class="text-info"><b>PASS/FAIL:</b> If the user is not capable of skipping certain pieces of information, the system fails to meet this goal.</i></p>
+							</div>
+							<div class="well">
+								<h5><b>Goal # 5</b></h5> 
+								<p><i>The user should at all time know what input is expected of her in order to enter the mode he requires.</i>
+								<p class="text-info"><b>PASS/FAIL:</b> If, at any time, the user shows signs of confusion and asks the examiner to help him with what to do next, the system fails to meet this goal.</i></p>
+							</div>
+						</div>
+					</div>
 				</section>
 				<section id="sec4">
-					<h2>Use Case Scenarios</h2>
-					At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can 
-					find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
-					
-				
-			   
-					<hr class="col-md-12">
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	
+					<div class="page-header">
+						<h2>Usability Test Procedure<small></small></h1>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<h5>How many examiners are required?</h5>
+							<p class="text-justify">We recommend using a minimum 2 examiners to manage each user test. One of the examiners should be there to help the user in case of question or confusion and the other should be recording if the usability goals above are being met. Ideally, 5 users should be tested,as depicted by the “Why You Only Need To Test With 5 Users” class reading.</p>
+							<h5>What equipment will the examiners need?</h5>
+							<p class="text-justify">The hardware equipment required for the testing is an android smartphone with a cover that can be worn around the neck so the phone can hang, and a pair of headphones, ideally bone conduction. If there is a problem finding bone conduction headphones or cover for the smartphone, please contact Roger from the Intersect-Assist team. The application runs on Android (or proto.io) which means the users will need to install the application from the Google Play Store (or the proto.io application available on the Google Play Store).</p>
+							<h5>How should your prototype be handled?</h5>
+							<p class="text-justify">The user/examiner should follow the procedure depicted in the user manual documentation above for installation. After the application has been installed, the hardware should be worn by the user, as depicted in the manual.</p>				
+							<p class="text-justify">Seeing as how this is a simulation, this computer prototype is designed to map specific intersections only. As a result, doing field tests is not feasible since the veering mechanism is not put in place, which can put the users in a potentially dangerous situation.</p>
+							<p class="text-justify">The mapping provided in this prototype is based on specific walking paths the user would follow. If the user changes orientations, the information provided won’t be accurate. The simulated veering component is put in place to provide the user with a sense of how the application would portray the information regarding which way the person should veer.</p>				
+							<h6 class="text-justify text-danger"><b>DISCLAIMER: No actual sensing is being performed by the application. Do not let the user cross the intersection without your help.</b></h6>
+							<h5>How will you instruct your examiners to proceed?</h5>
+							<p class="text-justify">The examiners should start by downloading the application and reading the user manual above. Afterwards, they should start the application and perform a cognitive walkthrough to find usability issues and potential redesign points. The examiners should follow the procedure depicted in the ‘Usability Evaluation’ section of this page.</p>				
+							<p class="text-justify">Afterwards, the examiners should contact some potential users, as indicated in the ‘User Population’ section, and attempt to meet with them to perform the usability test. As mentioned in the previous point, we recommend performing the usability testing in a usability lab environment since actual intersection will not provide the user with the correct data and the outdoor environment might overload the user. Also, if the user chooses a route that was not predicted in this simulation, the user might get confused by the information being provided and, as a result, the usability goals may be affected.</p>
+							<h5>What should the examiners tell the test subjects?</h5>
+							<p class="text-justify">The examiners should debrief the subjects according to the ‘User Introduction’ section in the user manual. Afterwards, the examiners should proceed to the ‘Pretest Questionnaire’. It may be necessary to help the user install the application depending on how ‘Smartphone Savvy’ the user is. Once the test is complete, the examiners should proceed to the ‘Post-test Questionnaire’.</p>
+							<h5>What should the examiners avoid doing?</h5>
+							<p class="text-justify">The examiners should avoid providing the user with help unless the user asks for it. The user should be able to start the application by themselves, once installed on their smartphone.</p>
+							<p class="text-justify">The examiners should also avoid talking to the user when they are using the application. The user should be allowed to focus on the application since he/she is still in the novice phase.</p>
+							<p class="text-justify">Finally, the examiners should avoid telling or insinuating what the usability goals are. This can greatly influence how the user attempts to accomplish certain tasks in the application.</p>
+							<h5>How and when should the examiners measure?</h5>
+							<p class="text-justify">The examiners should be measuring according to the ‘Usability Goals’ document. This should be done throughout the usability test. If any goal, depicted in the Usability goals section, fails, it should be noted in this document. One document should be printed and filled out per test subject.</p>
+						</div>
+					</div>				
+				</section>
+				<section id="sec4">
+					<h2>Reporting</h2>
+					<hr/>
+					<div class="row">
+						<div class="col-xs-12">
+							<h4>Files</h4>
+							<ul>
+								<li><a href="./files/templates/pre-test-questionnaire.pdf">Pre-Test Questionnaire</a></li>
+								<li><a href="./files/templates/post-test-questionnaire.pdf">Post-Test Questionnaire</a></li>
+								<li><a href="./files/templates/usability-goals.pdf">Usability Goals</a></li>
+							</ul>							
+						</div>
+					</div>
 				</section>
 				<section id="sec5">
-					<h2>Related Products</h2>
-					At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can 
-					find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
-					
-				
-			   
-					<hr class="col-md-12">
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	
+					<h2>Usability Evaluation</h2>
+					<p>The usability evaluation should be performed by each member of the team separately. It should be performed by filling the complete document including the comments section. Afterwards, we recommend the team meet together and further discuss the usability problems discovered during the individual sessions. Once the discussions are complete, the team should fill a paragraph describing the agreed upon usability problems discovered as a group. We would like to collect these documents from the evaluators once they complete the formative feedback section of the project.</p>
 				</section>
 				<section id="sec6">
-					<h2>Products Comparative</h2>
-					At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can 
-					find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
-					
-				
-			   
-					<hr class="col-md-12">
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	
-				</section>
-				<section id="sec7">
-					<h2>High-level Design</h2>
-					At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can 
-					find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
-					
-				
-			   
-					<hr class="col-md-12">
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	
-				</section>
-              	<section id="sec8">
-					<h2>Feasability Study</h2>
-					At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can 
-					find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
-					
-				
-			   
-					<hr class="col-md-12">
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	
-				</section>
-              	
+					<h2>Summary of Individual Contributions</h2>
+					<h3>Contributions</h3>
+					<h4>Roger Girgis</h4>
+					<ul>
+						<li>Design Evolution</li>
+						<li>user Population</li>
+						<li>Usability Goals</li>
+						<li>Usability Test Procedure</li>
+						<li>Reporting</li>
+						<li>Usability Evaluation</li>
+					</ul>
+					<h4>Manfred Diaz</h4>
+					<ul>
+						<li>Installation Manual</li>
+						<li>Reporting</li>
+						<li>Prototype Implementation</li>
+						<li>Website</li>
+					</ul>
+					<h3>Contribution hours</h3>
+					<table class="table table-condensed table-bordered">
+
+						<thead>
+							<tr class="success">
+								<th></th>
+								<th class="text-center">Roger Girgis</th>
+								<th class="text-center">Manfred Diaz</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>meetings</td>
+								<td class="text-center">1</td>
+								<td class="text-center">1</td>
+							</tr>
+							<tr>
+								<td>website</td>
+								<td class="text-center">3</td>
+								<td class="text-center">3</td>
+							</tr>
+							<tr>
+								<td>writing</td>
+								<td class="text-center">6</td>
+								<td class="text-center">2</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td>total</td>
+								<td class="text-center">10</td>
+								<td class="text-center">6</td>
+							</tr>
+						</tfoot>	
+					</table>
+				</section>              	
       		</div> 
   	</div>
 </div>
 
-
-
-	<!-- script references -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/scripts.js"></script>
-	</body>
+<!-- script references -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
 </html>
