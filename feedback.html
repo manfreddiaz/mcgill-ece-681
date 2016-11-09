@@ -14,7 +14,7 @@
 	</head>
 	<body>
 
-<header class="navbar navbar-default navbar-static-top" role="banner">
+<header class="navbar navbar-inverse navbar-static-top" role="banner">
   <div class="container">
     <div class="navbar-header">
       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
@@ -27,16 +27,16 @@
     </div>
     <nav class="collapse navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
+        <li>
+          <a href="index.html">Project Proposal</a>
+        </li>
+        <li>
+          <a href="low-fidelity.html">Low-Fidelity Prototype & Test Plan</a>
+        </li>
+        <li>
+          <a href="high-fidelity.html">High-Fidelity Prototype & Evaluation Plan</a>
+        </li>
         <li class="active">
-          <a href="#">Project Proposal</a>
-        </li>
-        <li>
-          <a href="#">Low-Fidelity Prototype & Test Plan</a>
-        </li>
-        <li>
-          <a href="#">High-Fidelity Prototype & Evaluation Plan</a>
-        </li>
-        <li>
           <a href="#">Formative Feedback</a>
         </li>
 		<li>
@@ -53,193 +53,372 @@
 <!-- Begin Body -->
 <div class="container">
 	<div class="row">
-  			<div class="col-md-3" id="leftCol">
-              	
-				<div class="well"> 
-              	<ul class="nav nav-stacked" id="sidebar">
-                  <li><a href="#sec1">Observations</a></li>
-                  <li><a href="#sec2">Problem Statement</a></li>
-                  <li><a href="#sec3">Personas</a></li>
-                  <li><a href="#sec4">Use Case Scenarios</a></li>
-				  <li><a href="#sec5">Related Products</a></li>
-				  <li><a href="#sec6">Products Comparative</a></li>
-				  <li><a href="#sec7">High-level Design</a></li>
-				  <li><a href="#sec8">Feasability Study</a></li>
-              	</ul>
+  			<div class="col-md-3" id="leftCol">         	
+				<div class=""> 
+					<ul class="nav nav-pills nav-stacked " id="sidebar">
+					<li class="active"><a href="#sec1">Testing</a></li>
+					<li><a href="#sec2">Results and Analysis</a></li>
+					<li><a href="#sec3">Test Plan Critique</a></li>
+					<li><a href="#sec4">Design Critique</a></li>
+					</ul>
   				</div>
-
-      		</div>  
+      		</div>
       		<div class="col-md-9">
-              	<section id="sec1">
-					<h2>Observations</h2>
-					At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can 
-					find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
-					
-				
-			   
-					<hr class="col-md-12">
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	
+				<section id="sec1">
+					<div class="page-header">
+						<h2>Testing<small></small></h1>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<h5>Testing</h5>
+							<p>We have been tasked with evaluating the proposed Scan and Go application. This application is aimed at assisting the visually impaired community with the task of grocery shopping.</p> 
+							<p>Since some documentation regarding testing was missing, we used a modified version of the pre-test questionnaire and the post-test questionnaire from the low-fidelity prototype deliverable and made a data collection sheet that will allow us to evaluate if the system meets the usability goals defined by the Scan and Go team. Additionally, some of the usability goals were irrelevant for the computer prototype testing and we therefore modified and eliminated some of them. Discussion of these modifications will be further discussed in the test plan critique section.</p>
+							<p>Since there was no indication of the number of users to be tested on, and the difficulty in obtaining users from the visually impaired community, we only tested the prototype on one partially blind user.</p> 
+							<p>Three benchmark tasks have been defined for these tests. The first is about understanding the user manual content and knowing the affordances of the system. The second one involves the user taking a picture of the aisle’s overhung sign and the application responds with the content in the sign. The last one is to take a picture of a product and have the application tell the user the product in the picture and its price.</p>
+							<p>The test procedure that was followed is:</p>
+							<ol>
+								<li>Provide the user with an introduction to the application and read the INLB Consent form. Read the user manual for how to operate the system as required by the  application.</li>
+								<li>Fill out the Pre-test questionnaire with the user.</li>
+								<li>Begin the testing process of the application. One examiner will be assisting the user with the application, providing the text information that is in the image (or say “The picture is not clear. Please try again.”). The other examiner will be filling the data collection sheet, ensuring to test each usability goal.</li>
+								<li>Fill out the Post-test questionnaire with the user.</li>
+								<li>Conclude the test by thanking the user for their participation and cooperation.</li>
+							</ol>
+							<p>The filled out forms are provided <a href="./files/data-collection-sheet.docx">here.</a></p>
+						</div>
+					</div>				
+				</section> 
+              	<section id="sec2">
+					<div class="page-header">
+						<h2>Results and Analysis</h1>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<h5>Usability Goals</h5>
+							<p class="text-justify">We re-defined the usability goals that were provided by the Scan & Go team. Justification of these changes will be explained in the next section.</p>
+							<ol>
+								<li>Instructions from the user manual should only need to be heard once by the user.</li>
+								<li>The user starts the camera successfully after the first attempt.</li> 
+								<li>The user takes a picture with the button successfully after the first attempt.</li>
+								<li>The user needs one attempt to take a picture of the overhung aisle sign.</li>
+								<li>Only one item is in view when taking the picture.</li>
+								<li>The price of the item is in view when taking the picture.</li>
+								<li>The user never had to turn to the evaluator for help regarding the application.</li>
+							</ol>						
+							<h5>Observations in User Testing</h5>
+							<p class="text-justify">In the attachments in the testing section above, we highlighted the comments from users and our observations. In this section, we will present these comments and observation, and relate them to the above usability goals.</p>
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th>#</th>
+										<th>Observation</th>
+										<th>User Comments</th>
+										<th>Usability Goal</th>
+										<th>Quantitative Measure</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>It was difficult for the user to take a picture of only one item.</td>
+										<td>“It is difficult for me to position the camera so it only captures one item.”</td>
+										<td>Failure of Usability goal #5</td>
+										<td>Benchmark task #2: 3 pictures included at least two products.</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>The user found it very challenging to include the price with the product.</td>
+										<td>“The price is STILL not included???”</td>
+										<td>Failure of Usability goal #6</td>
+										<td>Benchmark task #3: 6 pictures were necessary before the user had success.</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>The user found the instructions clear enough. Didn’t require any further explanations on the affordances of the system.</td>
+										<td>“This is clear enough. Lines up with what I know from my VoiceOver use.”</td>
+										<td>System meets Usability goal #1</td>
+										<td>Benchmark task #1: The user needed to hear the instructions only one time.</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>The user has no problem starting the camera mode of the application and taking a picture.</td>
+										<td></td>
+										<td>System meets Usability goal #2 and #3</td>
+										<td>Benchmark task #2 & #3: The user started the camera  and took a picture after one attempt only</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>The user never needed turned to the evaluators for a question regarding the system usage.</td>
+										<td></td>
+										<td>System meets Usability goal #7</td>
+										<td>Benchmark task #1, #2 & #3: 0 attempts have been made to ask the evaluator for assistance.</td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>The user found it relatively easy to take a picture of the overhung aisle sign. However, the first image taken was too blurry.</td>
+										<td>“Since I have low-vision, I can position the camera with the sign as it contrasts strongly with the ceiling.”</td>
+										<td>Failure Usability goal #4</td>
+										<td>Benchmark task #2: 2 attempts were necessary to take a clear picture of the overhung sign.</td>
+									</tr>
+								</tbody>
+							</table>
+							<p class="text-justify">
+								Looking at the results presented in the table above, we note that the system passes 4/7 usability goals with the single subject we tested with. We strongly believe that we could’ve benefited from testing with a completely blind user. However, due to time constraints and schedule misalignment, it was impossible to set up such a meeting.
+							</p>
+							<h5>Heuristic Evaluation [<i>Provided by the design team</i>]</h5>
+							<p class="text-justify">In the attachments in the testing section above, we highlighted the comments from users and our observations. In this section, we will present these comments and observation, and relate them to the above usability goals.</p>
+							<h6><b>​Visibility of system status</b></h6>
+							<p><b>Description:</b> ​Visibility is of course an interesting word to use when referring to our system
+							status, as the status has to be completely available to the user without actually seeing the
+							device. Now if we consider visibility as the user’s ability to understand the state of the
+							application at any given time, then this applies equally well to our movement through the states
+							of the application. Evaluate how clear it is at any given time what the current status of the
+							system is, and what actions are available.</p>
+							<p><b>RATING&nbsp;[over 10]:</b>&nbsp;5</p>
+							<p><b>Justification:</b>
+								<ul>
+									<li>Once the camera button on the first page is clicked, it should inform the user that camera mode has been entered.</li>
+									<li>The system doesn’t inform the user well enough when the picture has been taken. (For this point, even the user said it “Did it take the picture?”) The system does make an auditory icon sound of the picture being taken but it wasn’t loud enough compared to the speech of the system. Ideally, it should be controlled from the system making a louder noise as an indication.</li>
+									<li>Not sure if this is to be implemented but the system should inform the user right away after the image has been taken if it is clear or not.</li>
+								</ul>
+							</p>
+							<h6><b>​User control and freedom</b></h6>
+							<p><b>Description:</b> Our application is striving to be very simple for the user. Since there are very few
+							states, we want the user to be able to grab control at any given time, and quickly. Evaluate how easy it is to cancel actions, particularly how easy it is to take a new picture at any given time.</p>
+							<p><b>RATING&nbsp;[over 10]:</b>&nbsp;10</p>
+							<p><b>Justification:</b>
+								<ul>
+									<li>It is clear at any moment how to retake or cancel image mode.</li>							
+								</ul>
+							</p>
+							<h6><b>​Recognition rather than recall</b></h6>
+							<p><b>Description:</b> ​​We do not want our application to require the user to remember anything about
+previous states in order to proceed through with evaluation. Evaluate how explicit the system is
+about required actions and information from the user.</p>
+							<p><b>RATING&nbsp;[over 10]:</b>&nbsp;8</p>
+							<p><b>Justification:</b>
+								<p>The user can benefit from a brief startup tutorial that is skippable. This would inform the user of the affordances the system allows such as using the volume buttons to take a picture. Other than that, it is relatively clear that the system relies more on recognition than recall.</p>
+							</p>
+							<h6><b>​​Aesthetic and minimalist design</b></h6>
+							<p><b>Description:</b> With application dialogues, especially speech, it is crucial to reduce the amount of
+user facing prompts there are. Keep in mind that conciseness and clarity in speech would be
+considered an aesthetic property. Evaluate how succinctly the application conveys interactions
+with the user.</p>
+							<p><b>RATING&nbsp;[over 10]:</b>&nbsp;7</p>
+							<p><b>Justification:</b>
+								<p>The first page has a minimalist design and is very good in terms of auditory aesthetics. However, the camera mode page has too many options which can be removed. We would suggest removing the flash button and the camera chooser button, as they may cause confusion and we don’t see a need to use them.</p>
+							</p>
+							<h6><b>​Help and documentation</b></h6>
+							<p><b>Description:</b> ​Evaluate how well the user manual and prompts aid the user in completing their task.</p>
+							<p><b>RATING&nbsp;[over 10]:</b>&nbsp;6</p>
+							<p><b>Justification:</b>
+								<p>The user manual documentation lacks an introduction to the system. However, the section on using the system is clear and concise. The system can benefit greatly from an introductory tutorial.</p>
+							</p>
+							<h5>Usability Issues Summary</h5>
+							<p class="text-justify">The usability issues below are obtained from the usability testing performed with the user and the heuristic evaluation performed with a usability expert. These issues are presented in a priority rated from most urgent to least urgent.</p>
+							<h6><b>1. Taking a picture of a product with its price makes assumptions on the user’s abilities to take pictures.</b></h6>
+							<p>It took the user 6 attempts to take the picture correctly, including the price. On the last try, it took the user 45 seconds to the picture correctly, with a tremendous amount of focus being required. Considering our subject was a low-vision person, this task would be much more difficult for the other segment this application is meant for, the totally-blind user. We highlight the frustration the subject had with the following quote:
+“The price is STILL not included???”</p>
+							<p><b>Priority:</b>&nbsp;HIGH</p>
+							<h6><b>2. Taking a clear picture of an overhung aisle sign is challenging for the user.</b></h6>
+							<p>It took our user two attempts to take a clear picture of the overhung sign. This doesn’t seem like it can be avoided using the image analysis method being proposed. Furthermore, if the user was from the totally-blind user segment, this task would be close to impossible without the assistance from someone else. We highlight the subject’s comment on this part of the application:
+“Since I have low-vision, I can position the camera with the sign as it contrasts strongly with the ceiling.”
+</p>
+							<p><b>Priority:</b>&nbsp;HIGH</p>	
+							<h6><b>3. The state of the system isn’t always clear to the user.</b></h6>
+							<p>The “visibility” of the system should be optimized. As highlighted during the heuristic evaluation, once camera mode is initiated, the system should inform the user what should be done next. Furthermore, the auditory icon made by the system wasn’t nearly loud enough when you take the loud noises inside the grocery store into account. We highlight the subject’s comment on this part of the application:
+							“Did it take the picture?”</p>
+							<p><b>Priority:</b>&nbsp;MEDIUM</p>
+							<h6><b>4. The system “Aesthetics” need to be improved to make it easier for the user to perform the tasks at hand.</b></h6>
+							<p>Some of the buttons offered by the camera menu aren’t useful to the user. This includes the camera selector and the flash mode. Since lighting in supermarkets is usually not a problem, the option of flash adds clutter to the UI. Similarly, we don't see where the user would need to activate the front-facing camera for the task at hand.</p>
+							<p><b>Priority:</b>&nbsp;LOW</p>
+							<h6><b>5. The User manual and documentation needs to be improved.</b></h6>
+							<p>As noted in the heuristic evaluation, an introduction to the system can greatly help the user understand the goal of the system. Additionally, an initial tutorial that is skippable can help the user understand how to use the system, especially when more features are added.</p>
+							<p><b>Priority:</b>&nbsp;LOW</p>							
+						</div>
+					</div>				
 				</section>
-				<section id="sec2">
-					<h2>Problem Statement</h2>
-					At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can 
-					find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
-					
-				
-			   
-					<hr class="col-md-12">
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	
-				</section>
+				<section id="sec1">
+					<div class="page-header">
+						<h2>Test Plan Critique<small></small></h1>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<h5>User Manual</h5>
+							<h6><b>1. The installation procedure addresses users as software developers.</b></h6>
+							<p>The installation procedure presumes users is comfortable with several software development technologies and also with the availability of the hardware and software required to BUILD the prototype, not only to install it. The explanation is far more closer to a build manual, for developers, than to an installation manual.</p>
+							<p><b>Suggestion:</b>&nbsp;Rewrite the section with proper installation only instructions, thus removing the need to have build technologies to try the prototype.</p>
+							<h6><b>2. Lack of general overview of the system features and purpose.</b></h6>
+							<p>The manual lack of a general explanation of the system main features. This is required to give users a comprehensive overall idea of the task they can accomplish with the application, in which order can be performed and how can be accessed.</p>
+							<p><b>Suggestion:</b>&nbsp;Provide a brief introduction explaining the tasks that can be accomplished by the users using the application.</p>
+							<h6><b>3. Uses terminology that may not be adequate to all users.</b></h6>
+							<p>Terms like Optical Character Recognition may not sound familiar, and are far from most user population domain of expertise. This type of technology related terms should be avoided in all scenarios in end-product user documentation (user installation and manual).</p>
+							<p><b>Suggestion:</b>&nbsp;Remove the “Optical Character Recognition” term from the user manual.</p>
+							<h6><b>4. Tasks are specified too general, without the adequate level of details.</b></h6>
+							<p>The approach employed for describing the tasks is overly simple. Tasks have been stated without specifying users’ goals while performing actions e.g: “Press one of the volume buttons	to take	a picture”. This approach does not related at all with the system purpose, and does not walk the user through “why” they are performing each task.</p>
+							<p><b>Suggestion:</b>&nbsp;Rewrite the tasks description with a more step-by-step explanation that includes a detailed description of both user actions and purpose.</p>
+							<h6><b>5. Manual treats users with condescendence.</b></h6>
+							<p>Sentences like “ If you don’t	hear the device speak	to you	turn the phone off vibrate” are more appropriate of a troubleshooting guide than to a user manual. It cannot be considered as if it add an additional value to the manual, and treats users with condescendence - lot of different problems may be causing that type of issue.</p>
+							<p><b>Suggestion:</b>&nbsp;Remove that sentence. If you want to address potential issues make a troubleshooting section at the end of the manual.</p>
+						</div>
+						<div class="col-xs-12">
+							<h5>Usability Goals</h5>
+							<p>Generally, the usability goals are not stated as measurable either in a quantitative or a qualitative way. In order to perform our formative feedback, we had redefined most of the goals, aiming to test users effectiveness, efficiency or level of satisfaction with the prototype. Furthermore, some task were not included in the goals, like taking a picture of the overhung aisle signals, which are a central part of the overall user activity while shopping.</p>
+							<h6><b>1. “Explanation of instructions takes less than 2 minutes.” does not represent a measurable quantity of users actions.</b></h6>
+							<p>The explanation of instructions is an action either performed by the system (introduction message, manual, etc) or the test team rather than the actual users or test subjects. It is not aligned with what a usability goal means.</p>
+							<p><b>Suggestion:</b>&nbsp;Restate this goal taking into account what the level of effectiveness or efficiency the users will have after reading/hearing the instructions. e.g: “Instructions from the user manual should only need to be heard once by the user.”</p>
+							<h6><b>2. Use of a holder</b></h6>
+							<p>Neither, “The user is able to remove the phone from its holder with a single hand.” nor “The user is able to place the phone back on the holder with a single hand.” are part of the prototype functionality so they cannot be considered as usability goals that need to be considered in your test plan. Furthermore, they are also not specified in measurable terms.</p>
+							<p><b>Suggestion:</b>&nbsp;Remove ‘goals’ from the listing.</p>
+							<h6><b>3. Reconvert statements into measurable user goals</b></h6>
+							<p>Statements “The user starts taking picture by tapping on the screen.”, “The user takes a photo by pressing one of the volume buttons.”,  “The camera is not blocked when the user tries to take a picture.” should be redefined in terms of measurable qualitative or quantitative aspects of the interaction.</p>
+							<p><b>Suggestion:</b>&nbsp;As a sample of this process, we have reconverted this goals into measurable items.e.g: “The user starts the camera successfully after the first attempt.”.</p>
+						</div>
+						<div class="col-xs-12">
+							<h5>Test Procedure</h5>
+							<h6><b>1. Benchmark tasks are missing.</b></h6>
+							<p>The benchmark tasks corresponding to the usability goals stated are not presented in the document. Hence, we have found the need to define the required task to properly evaluate the usability of the prototype.</p>
+						</div>
+						<div class="col-xs-12">
+							<h5>Reporting</h5>
+							<h6><b>1. Test material are completely lacking.</b></h6>
+							<p>The benchmark tasks corresponding to the usability goals stated are not presented in the document. Hence, we have found the need to define the required document for evaluation purposes.</p>
+							<p><b>Suggestion:</b>&nbsp; Please check the document <a href="./files/data-collection-sheet.docx">here</a>, where we have design the required materials to test the prototype.</p>
+						</div>
+					</div>				
+				</section> 
 				<section id="sec3">
-					<h2>Personas</h2>
-					At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can 
-					find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
-					
-				
-			   
-					<hr class="col-md-12">
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	
+					<div class="page-header">
+						<h2>Design Critique</h1>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<p>As per our appreciation of the tasks carried by the test subject, point and shoot technique looks like a hard approach for visually impaired individuals. The subject in question was partially sighted, segment that does not even represent the most needed segment in the visually impaired community. From our perspective, the system makes two assumptions that diminish its potential: </p>
+							<ul>
+								<li>The user is able to correctly navigate through corridors and correctly locate the aisles’ hanging signals.</li>
+								<li>The user is able to correctly capture one single product with its price tag on the shelves.</li>
+							</ul>
+							<p>The significance of these issues is relevant in a manner that could probably eliminate users’ interest in this application. The collected data from pre and post test questionnaires demonstrates this fact. The user perception of likeness to ask for assistance while shopping did not seem to be greatly impact with the use of this prototype.</p>
+							<p>We would strongly suggest the Scan&Go team to reevaluate the low-fidelity prototype phase. Is in our belief that the paper-based low-fidelity prototype used did not accurately measure the two aforementioned tasks, otherwise these fundamental problems could have been detected earlier. A device like the one depicted below may help to maintain the simplicity of the prototype while correctly addressing the users’ limitations with pointing and clicking techniques. Different approaches on this type of problems in systems design can be found in The Open Rehabilitation Journal <a href="http://benthamopen.com/contents/pdf/TOREHJ/TOREHJ-3-158.pdf">publication</a>.</p>
+							<img src="./imgs/prototype-scan-go.png" height="200" width="200" class="text-center">
+							<p>There are other recommendations we would like to provide to the Scan&Go team.</p>
+							<p>Firstly, using a video feed instead of a still image will potentially alleviate the user burden of doing the point and shoot technique, which is overly complex given their limitations. The video feed can help them to explore first and focus later on an specific product in less radical approach.</p>
+							<p>Furthermore, the application should include a tutorial introducing user with basic application tasks before first use. This information would have a twofold purpose, as a simple form of familiarization with the application features and at the same time could serve for training and help functions. The collected data displayed the test subject asking for the existence of features -shopping list- that she was unable to locate with the current computer prototype.</p>
+						</div>
+					</div>
+
 				</section>
 				<section id="sec4">
-					<h2>Use Case Scenarios</h2>
-					At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can 
-					find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
-					
-				
-			   
-					<hr class="col-md-12">
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	
+					<div class="page-header">
+						<h2>Usability Test Procedure<small></small></h1>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<h5>How many examiners are required?</h5>
+							<p class="text-justify">We recommend using a minimum 2 examiners to manage each user test. One of the examiners should be there to help the user in case of question or confusion and the other should be recording if the usability goals above are being met. Ideally, 5 users should be tested,as depicted by the “Why You Only Need To Test With 5 Users” class reading.</p>
+							<h5>What equipment will the examiners need?</h5>
+							<p class="text-justify">The hardware equipment required for the testing is an android smartphone with a cover that can be worn around the neck so the phone can hang, and a pair of headphones, ideally bone conduction. If there is a problem finding bone conduction headphones or cover for the smartphone, please contact Roger from the Intersect-Assist team. The application runs on Android which means the users will need to install the application from the Google Play Store.</p>
+							<h5>How should your prototype be handled?</h5>
+							<p class="text-justify">The user/examiner should follow the procedure depicted in the user manual documentation above for installation. After the application has been installed, the hardware should be worn by the user, as depicted in the manual.</p>				
+							<p class="text-justify">Seeing as how this is a simulation, this computer prototype is designed to map specific intersections only. As a result, doing field tests is not feasible since the veering mechanism is not put in place, which can put the users in a potentially dangerous situation.</p>
+							<p class="text-justify">The mapping provided in this prototype is based on specific walking paths the user would follow. If the user changes orientations, the information provided won’t be accurate. The simulated veering component is put in place to provide the user with a sense of how the application would portray the information regarding which way the person should veer.</p>				
+							<h6 class="text-justify text-danger"><b>DISCLAIMER: No actual sensing is being performed by the application. Do not let the user cross the intersection without your help.</b></h6>
+							<h5>How will you instruct your examiners to proceed?</h5>
+							<p class="text-justify">The examiners should start by downloading the application and reading the user manual above. Afterwards, they should start the application and perform a cognitive walkthrough to find usability issues and potential redesign points. The examiners should follow the procedure depicted in the ‘Usability Evaluation’ section of this page.</p>				
+							<p class="text-justify">Afterwards, the examiners should contact some potential users, as indicated in the ‘User Population’ section, and attempt to meet with them to perform the usability test. As mentioned in the previous point, we recommend performing the usability testing in a usability lab environment since actual intersection will not provide the user with the correct data and the outdoor environment might overload the user. Also, if the user chooses a route that was not predicted in this simulation, the user might get confused by the information being provided and, as a result, the usability goals may be affected.</p>
+							<h5>What should the examiners tell the test subjects?</h5>
+							<p class="text-justify">The examiners should debrief the subjects according to the ‘User Introduction’ section in the user manual. Afterwards, the examiners should proceed to the ‘Pretest Questionnaire’. It may be necessary to help the user install the application depending on how ‘Smartphone Savvy’ the user is. Once the test is complete, the examiners should proceed to the ‘Post-test Questionnaire’.</p>
+							<h5>What should the examiners avoid doing?</h5>
+							<p class="text-justify">The examiners should avoid providing the user with help unless the user asks for it. The user should be able to start the application by themselves, once installed on their smartphone.</p>
+							<p class="text-justify">The examiners should also avoid talking to the user when they are using the application. The user should be allowed to focus on the application since he/she is still in the novice phase.</p>
+							<p class="text-justify">Finally, the examiners should avoid telling or insinuating what the usability goals are. This can greatly influence how the user attempts to accomplish certain tasks in the application.</p>
+							<h5>How and when should the examiners measure?</h5>
+							<p class="text-justify">The examiners should be measuring according to the ‘Usability Goals’ document. This should be done throughout the usability test. If any goal, depicted in the Usability goals section, fails, it should be noted in this document. One document should be printed and filled out per test subject.</p>
+						</div>
+					</div>				
+				</section>
+				<section id="sec4">
+					<h2>Reporting</h2>
+					<hr/>
+					<div class="row">
+						<div class="col-xs-12">
+							<h4>Files</h4>
+							<ul>
+								<li><a href="./files/templates/pre-test-questionnaire.pdf">Pre-Test Questionnaire</a></li>
+								<li><a href="./files/templates/post-test-questionnaire.pdf">Post-Test Questionnaire</a></li>
+								<li><a href="./files/templates/usability-evaluation.pdf">Usability Goals</a></li>
+							</ul>							
+						</div>
+					</div>
 				</section>
 				<section id="sec5">
-					<h2>Related Products</h2>
-					At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can 
-					find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
-					
-				
-			   
-					<hr class="col-md-12">
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	
+					<h2>Usability Evaluation</h2>
+					<p>The usability evaluation should be performed by each member of the team separately. It should be performed by filling the complete document including the comments section. Afterwards, we recommend the team meet together and further discuss the usability problems discovered during the individual sessions. Once the discussions are complete, the team should fill a paragraph describing the agreed upon usability problems discovered as a group. We would like to collect these documents from the evaluators once they complete the formative feedback section of the project.</p>
+
+					<a href="./files/templates/usability-goals.pdf">Usability Evaluation</a>
+
 				</section>
 				<section id="sec6">
-					<h2>Products Comparative</h2>
-					At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can 
-					find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
-					
-				
-			   
-					<hr class="col-md-12">
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	
-				</section>
-				<section id="sec7">
-					<h2>High-level Design</h2>
-					At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can 
-					find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
-					
-				
-			   
-					<hr class="col-md-12">
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	
-				</section>
-              	<section id="sec8">
-					<h2>Feasability Study</h2>
-					At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can 
-					find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
-					
-				
-			   
-					<hr class="col-md-12">
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	
-				</section>
-              	
+					<h2>Summary of Individual Contributions</h2>
+					<h3>Contributions</h3>
+					<h4>Roger Girgis</h4>
+					<ul>
+						<li>Design Evolution</li>
+						<li>user Population</li>
+						<li>Usability Goals</li>
+						<li>Usability Test Procedure</li>
+						<li>Reporting</li>
+						<li>Usability Evaluation</li>
+					</ul>
+					<h4>Manfred Diaz</h4>
+					<ul>
+						<li>Installation Manual</li>
+						<li>Reporting</li>
+						<li>Prototype Implementation</li>
+						<li>Website</li>
+					</ul>
+					<h3>Contribution hours</h3>
+					<table class="table table-condensed table-bordered">
+
+						<thead>
+							<tr class="success">
+								<th></th>
+								<th class="text-center">Roger Girgis</th>
+								<th class="text-center">Manfred Diaz</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>meetings</td>
+								<td class="text-center">1</td>
+								<td class="text-center">1</td>
+							</tr>
+							<tr>
+								<td>website</td>
+								<td class="text-center">3</td>
+								<td class="text-center">3</td>
+							</tr>
+							<tr>
+								<td>writing</td>
+								<td class="text-center">6</td>
+								<td class="text-center">2</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td>total</td>
+								<td class="text-center">10</td>
+								<td class="text-center">6</td>
+							</tr>
+						</tfoot>	
+					</table>
+				</section>              	
       		</div> 
   	</div>
 </div>
 
-
-
-	<!-- script references -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/scripts.js"></script>
-	</body>
+<!-- script references -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
 </html>
