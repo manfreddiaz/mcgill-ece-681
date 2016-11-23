@@ -59,7 +59,6 @@
 					<li class="active"><a href="#sec1">Design Evolution</a></li>
 					<li><a href="#sec2">Prototype Implementation</a></li>
 					<li><a href="#sec3">Refinement of Documentation</a></li>
-					<li><a href="#sec4">Design Critique</a></li>
 					</ul>
   				</div>
       		</div>
@@ -98,13 +97,15 @@
 						<h2>Prototype Implementation</h1>
 					</div>
 					<div class="row">
-						<p>The overall architecture of our implementation consist on a smartphone (Android-based) application and a server side component that has the responsibility of doing all the heavy processing related to intersection mapping calculation and traffic light detection and veering.</p>
-						<p>The Android application -can be found <a href="./files/intersect-assist-alpha.apk">here</a>- requires a minimum of Android version 5.0, mainly due to the advance Text to Speech offered by the OS starting in this release of the Android platform. For this alpha prototype we have added a seamless integration with the TalkBack Accessibility platform. A video of how this integration is currently working has been presented below:</p>
-						<video  width="400" height="200" controls> 
-							<source src="./files/videos/talkback.mp4" type="video/mp4">
-						</video>
-						<p>The server side implementation has extensively used OpenStreetMap open-source database in order to process users’ nearby intersection and describe it in terms that can provide some valuable information in the context of safely reaching the sidewalk. An HTTP REST server has been implemented using python Flask framework as an endpoint of the services provided by the application.</p>
-						<p>The traffic light detection and veering is a still a remaining part of our implementation but considering our current state, our team is confident that this feature will be released in the Beta Prototype of our application.</p>
+						<div class="col-xs-12">
+							<p>The overall architecture of our implementation consist on a smartphone (Android-based) application and a server side component that has the responsibility of doing all the heavy processing related to intersection mapping calculation and traffic light detection and veering.</p>
+							<p>The Android application -can be found <a href="./files/intersect-assist-alpha.apk">here</a>- requires a minimum of Android version 5.0, mainly due to the advance Text to Speech offered by the OS starting in this release of the Android platform. For this alpha prototype we have added a seamless integration with the TalkBack Accessibility platform. A video of how this integration is currently working has been presented below:</p>
+							<video  width="400" height="200" controls> 
+								<source src="./files/videos/talkback.mp4" type="video/mp4">
+							</video>
+							<p>The server side implementation has extensively used OpenStreetMap open-source database in order to process users’ nearby intersection and describe it in terms that can provide some valuable information in the context of safely reaching the sidewalk. An HTTP REST server has been implemented using python Flask framework as an endpoint of the services provided by the application.</p>
+							<p>The traffic light detection and veering is a still a remaining part of our implementation but considering our current state, our team is confident that this feature will be released in the Beta Prototype of our application.</p>
+						</div>
 					</div>				
 				</section>
 				<section id="sec3">
