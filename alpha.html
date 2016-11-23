@@ -98,6 +98,13 @@
 						<h2>Prototype Implementation</h1>
 					</div>
 					<div class="row">
+						<p>The overall architecture of our implementation consist on a smartphone (Android-based) application and a server side component that has the responsibility of doing all the heavy processing related to intersection mapping calculation and traffic light detection and veering.</p>
+						<p>The Android application -can be found <a href="./files/intersect-assist-alpha.apk">here</a>- requires a minimum of Android version 5.0, mainly due to the advance Text to Speech offered by the OS starting in this release of the Android platform. For this alpha prototype we have added a seamless integration with the TalkBack Accessibility platform. A video of how this integration is currently working has been presented below:</p>
+						<video  width="400" height="200" controls> 
+							<source src="./files/videos/talkback.mp4" type="video/mp4">
+						</video>
+						<p>The server side implementation has extensively used OpenStreetMap open-source database in order to process users’ nearby intersection and describe it in terms that can provide some valuable information in the context of safely reaching the sidewalk. An HTTP REST server has been implemented using python Flask framework as an endpoint of the services provided by the application.</p>
+						<p>The traffic light detection and veering is a still a remaining part of our implementation but considering our current state, our team is confident that this feature will be released in the Beta Prototype of our application.</p>
 					</div>				
 				</section>
 				<section id="sec3">
@@ -112,26 +119,14 @@
 							<p>The version 2 of our user manual contains many additions since our first user manual was greatly lacking. We added a table of content, installation guide and sections on navigating through the application. Since there was no comment made by the Glass Hook team regarding the minimalist user manual we provided for the computer prototype (Understandably so), the modifications we have done are solely on the team’s testing. </p>
 							<p>The first version of the user manual contained an introduction section and a brief tutorial on navigating through the application. However, there was a lack of task-based sections and there weren't any figures/images to help guide through the application. This new user manual includes figures which can help (but are not necessary) for understanding the flow of the application.</p>
 							<p>The refined user and installation guide can be found <a href="./files/user-manual.pdf">here</a>.</p>
-						</div>
-						<div class="col-xs-12">
-							<h5>Test Procedure</h5>
-							<h6><b>1. Benchmark tasks are missing.</b></h6>
-							<p>The benchmark tasks corresponding to the usability goals stated are not presented in the document. Hence, we have found the need to define the required task to properly evaluate the usability of the prototype.</p>
-						</div>
-						<div class="col-xs-12">
-							<h5>Reporting</h5>
-							<h6><b>1. Test material are completely lacking.</b></h6>
-							<p>The benchmark tasks corresponding to the usability goals stated are not presented in the document. Hence, we have found the need to define the required document for evaluation purposes.</p>
-							<p><b>Suggestion:</b>&nbsp; Please check the document <a href="./files/data-collection-sheet.docx">here</a>, where we have design the required materials to test the prototype.</p>
-						</div>
+						</div>					
 					</div>				
 				</section>      	
       		</div> 
   	</div>
 </div>
-
 <!-- script references -->
-	<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/scripts.js"></script>
 </body>
