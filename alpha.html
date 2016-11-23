@@ -14,7 +14,7 @@
 	</head>
 	<body>
 
-<header class="navbar navbar-default navbar-static-top" role="banner">
+<header class="navbar navbar-inverse navbar-static-top" role="banner">
   <div class="container">
     <div class="navbar-header">
       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
@@ -27,20 +27,20 @@
     </div>
     <nav class="collapse navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
-        <li class="active">
-          <a href="#">Project Proposal</a>
+        <li>
+          <a href="index.html">Project Proposal</a>
         </li>
         <li>
-          <a href="#">Low-Fidelity Prototype & Test Plan</a>
+          <a href="low-fidelity.html">Low-Fidelity Prototype & Test Plan</a>
         </li>
         <li>
-          <a href="#">High-Fidelity Prototype & Evaluation Plan</a>
+          <a href="high-fidelity.html">High-Fidelity Prototype & Evaluation Plan</a>
         </li>
         <li>
-          <a href="#">Formative Feedback</a>
+          <a href="feedback.html">Formative Feedback</a>
         </li>
-		<li>
-          <a href="#">Alpha System</a>
+		<li class="active">
+          <a href="alpha.html">Alpha System</a>
         </li>
 		<li>
           <a href="#">Beta System</a>
@@ -53,193 +53,86 @@
 <!-- Begin Body -->
 <div class="container">
 	<div class="row">
-  			<div class="col-md-3" id="leftCol">
-              	
-				<div class="well"> 
-              	<ul class="nav nav-stacked" id="sidebar">
-                  <li><a href="#sec1">Observations</a></li>
-                  <li><a href="#sec2">Problem Statement</a></li>
-                  <li><a href="#sec3">Personas</a></li>
-                  <li><a href="#sec4">Use Case Scenarios</a></li>
-				  <li><a href="#sec5">Related Products</a></li>
-				  <li><a href="#sec6">Products Comparative</a></li>
-				  <li><a href="#sec7">High-level Design</a></li>
-				  <li><a href="#sec8">Feasability Study</a></li>
-              	</ul>
+  			<div class="col-md-3" id="leftCol">         	
+				<div class=""> 
+					<ul class="nav nav-pills nav-stacked " id="sidebar">
+					<li class="active"><a href="#sec1">Design Evolution</a></li>
+					<li><a href="#sec2">Prototype Implementation</a></li>
+					<li><a href="#sec3">Refinement of Documentation</a></li>
+					<li><a href="#sec4">Design Critique</a></li>
+					</ul>
   				</div>
-
-      		</div>  
+      		</div>
       		<div class="col-md-9">
-              	<section id="sec1">
-					<h2>Observations</h2>
-					At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can 
-					find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
-					
-				
-			   
-					<hr class="col-md-12">
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	
-				</section>
-				<section id="sec2">
-					<h2>Problem Statement</h2>
-					At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can 
-					find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
-					
-				
-			   
-					<hr class="col-md-12">
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	
+				<section id="sec1">
+					<div class="page-header">
+						<h2>Design Evolution<small></small></h1>
+					</div>
+					<div class="row">	
+						<div class="col-xs-12">
+							<h5>From formative feedback</h5>
+							<p>The Intersect-Assist alpha prototype is a revision of the application which improves
+							upon some of the functionality and usability of the system. We reviewed the results and
+							suggested changes from the Glass Hook team, following the feedback they provided
+							after their user testing and heuristic evaluation. We have chosen, in the interest of time,
+							to implement the most feasible suggestions for the alpha prototype; although other ones
+							are relevant, they are not feasible for this project (this includes the development of an
+							iOS application). Additionally, we decided on some design changes that we felt would
+							meet our usability goals more effectively and improve the application’s usability score on
+							Nielsen’s heuristics.</p> 
+							<h5>Compatibility with TalkBack</h5>
+							<p>The Intersect assist team initially made an oversight in the computer prototype in not adhering to what the user population is accustomed to. It was assumed that the user’s would find the audio output of the system sufficient in completing the task. However, during the user testing performed by the Glass hook team, this posed an issue to the user and required them to disable the TalkBack option from settings. In response to this issue, we have made the new prototype compatible with TalkBack, an android-provided tool to facilitate navigation of the application for visually-impaired users. The addition of this feature is adheres to Nielsen’s Consistency and Standards heuristic.</p>
+							<h5>Modification of Affordances and Addition of On-screen Information</h5>
+							<p>Another addition to the design of the Intersect-Assist application is the display of affordances on the screen. This issue was reported by the Glass Hook team after the user complained that she wasn’t sure how to proceed from her current state. In that regard, we modified all the affordances of the system.</p> 
+							<p>Specifically, we moved away from the use of gestures such as swipe up and swipe down, which relied on the user’s memory. Instead, we introduced buttons on screen which display the possible inputs the user can do. As an example, initially from the main menu, the user needed to swipe up to enter the mapping menu or swipe down to enter the veering and traffic light detection. We modified our system so that buttons are displayed on-screen with one button reading “Mapping Menu” and another reading “Light Detection and Veering”. With the use of TalkBack, we are confident that the addition of these buttons will provide the user with more control and project confidence in the user when performing a task.</p>
+							<p>Although this modification wasn’t explicitly pointed out by the Glass Hook team, we believe that the underlying cause of the problem the user encountered was the reliance on her memory for what each swiping direction accomplished. This modification adheres to Nielsen’s recognition rather than recall and user control and freedom heuristics.</p>
+							<h5>Addition of Page Titles</h5>
+							<p>Another modification to the system is the addition of titles to each page in the system. This is something that the Intersect-Assist team found was lacking from the application. Although this might seem trivial, the team was naive in thinking it wasn’t necessary for the specified user population. However, after careful review, it was established that since there are two submenus in the proposed system, providing a title to each page gives the user access to more information about the pages. And with the addition of TalkBack, the possibilities of user confusion will be greatly diminished. This modification adheres to Nielsen’s visibility of system status heuristic.</p>
+							<h5>Providing the User with an End of Task prompt</h5>
+							<p>One of the issues discovered during user testing with the Glass Hook team was the lack of a sense of “ending of a task” when the test subject was done crossing the street. However, since we don’t foresee our system having the capability of detecting when the user has crossed the intersection, we have implemented a button that the user presses when they have completed crossing the intersection. This button will read “I’m Done!” and will provide the user with a better sense of where they are in the application. This modification also adheres to Nielsen’s visibility of system status heuristic.</p>
+						</div>
+					</div>				
+				</section> 
+              	<section id="sec2">
+					<div class="page-header">
+						<h2>Prototype Implementation</h1>
+					</div>
+					<div class="row">
+					</div>				
 				</section>
 				<section id="sec3">
-					<h2>Personas</h2>
-					At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can 
-					find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
-					
-				
-			   
-					<hr class="col-md-12">
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	
-				</section>
-				<section id="sec4">
-					<h2>Use Case Scenarios</h2>
-					At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can 
-					find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
-					
-				
-			   
-					<hr class="col-md-12">
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	
-				</section>
-				<section id="sec5">
-					<h2>Related Products</h2>
-					At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can 
-					find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
-					
-				
-			   
-					<hr class="col-md-12">
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	
-				</section>
-				<section id="sec6">
-					<h2>Products Comparative</h2>
-					At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can 
-					find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
-					
-				
-			   
-					<hr class="col-md-12">
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	
-				</section>
-				<section id="sec7">
-					<h2>High-level Design</h2>
-					At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can 
-					find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
-					
-				
-			   
-					<hr class="col-md-12">
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	
-				</section>
-              	<section id="sec8">
-					<h2>Feasability Study</h2>
-					At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can 
-					find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
-					
-				
-			   
-					<hr class="col-md-12">
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.              
-					Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-					eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-					sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	
-				</section>
-              	
+					<div class="page-header">
+						<h2>Refinement of Documentation<small></small></h1>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<h5>User Manual</h5>
+						</div>
+						<div class="col-xs-12">
+							<p>The version 2 of our user manual contains many additions since our first user manual was greatly lacking. We added a table of content, installation guide and sections on navigating through the application. Since there was no comment made by the Glass Hook team regarding the minimalist user manual we provided for the computer prototype (Understandably so), the modifications we have done are solely on the team’s testing. </p>
+							<p>The first version of the user manual contained an introduction section and a brief tutorial on navigating through the application. However, there was a lack of task-based sections and there weren't any figures/images to help guide through the application. This new user manual includes figures which can help (but are not necessary) for understanding the flow of the application.</p>
+							<p>The refined user and installation guide can be found <a href="./files/user-manual.pdf">here</a>.</p>
+						</div>
+						<div class="col-xs-12">
+							<h5>Test Procedure</h5>
+							<h6><b>1. Benchmark tasks are missing.</b></h6>
+							<p>The benchmark tasks corresponding to the usability goals stated are not presented in the document. Hence, we have found the need to define the required task to properly evaluate the usability of the prototype.</p>
+						</div>
+						<div class="col-xs-12">
+							<h5>Reporting</h5>
+							<h6><b>1. Test material are completely lacking.</b></h6>
+							<p>The benchmark tasks corresponding to the usability goals stated are not presented in the document. Hence, we have found the need to define the required document for evaluation purposes.</p>
+							<p><b>Suggestion:</b>&nbsp; Please check the document <a href="./files/data-collection-sheet.docx">here</a>, where we have design the required materials to test the prototype.</p>
+						</div>
+					</div>				
+				</section>      	
       		</div> 
   	</div>
 </div>
 
-
-
-	<!-- script references -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/scripts.js"></script>
-	</body>
+<!-- script references -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
 </html>
