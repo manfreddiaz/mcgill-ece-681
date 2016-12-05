@@ -129,7 +129,7 @@
 						<div class="col-xs-12">
 							<p>The overall architecture of our implementation consist on a smartphone (Android-based) application and a server side component that has the responsibility of doing all the heavy processing related to intersection mapping calculation and traffic light detection. Due to some estimations on the complexity of the feature and the most needed accuracy of an implementation to have a potential value for our users, we decided to remove the veering detection feature from our Beta Prototype. Hence, our Beta Prototype now includes the traffic light detection feature, which was missing from our ALpha release. This feature has brought the following changes to our system archiecture:</p>
 							<div class="col-xs-12 text-center"><img src="imgs/architecture.png" width="100%"></div>
-							
+							<p>The traffic light detection feature heavily relies of the implementation provided by the <a href="http://pjreddie.com/darknet/yolo/">Yolo Darknet</a> reserach project as an starting point for our light detection mechanism. This real-time object detection system provides us with the capability of detection traffic light in daily scenarios. On top of the results provided by this implementation we have created an specific routine to detect the status of the traffic light. At this moment, we do not considered that this feature has been properly tested in enough scenarios to consider it save for our end users. We expect that in a near future we will be able to run enough test scenarios to bring this application to our potential users. </p>
 						
 						</div>
 					</div>				
@@ -143,9 +143,8 @@
 							<h5>User Manual</h5>
 						</div>
 						<div class="col-xs-12">
-							<p>The version 2 of our user manual contains many additions since our first user manual was greatly lacking. We added a table of content, installation guide and sections on navigating through the application. Since there was no comment made by the Glass Hook team regarding the minimalist user manual we provided for the computer prototype (Understandably so), the modifications we have done are solely on the team’s testing. </p>
-							<p>The first version of the user manual contained an introduction section and a brief tutorial on navigating through the application. However, there was a lack of task-based sections and there weren't any figures/images to help guide through the application. This new user manual includes figures which can help (but are not necessary) for understanding the flow of the application.</p>
-							<p>The refined user and installation guide can be found <a href="./files/user-manual.pdf">here</a>.</p>
+							<p>TThe beta version of our user manual and installation guide shows the changes to the navigation of the system in relation to the modification shown above. </p>
+							<p>The refined user and installation guide can be found <a href="./files/user-manual-beta.pdf">here</a>.</p>
 						</div>					
 					</div>				
 				</section>      	
